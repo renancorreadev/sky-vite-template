@@ -9,9 +9,9 @@
     "prepare": "husky install",
     "release": "standard-version",
     "lint": "eslint src --max-warnings=0",
+    "commit": "./node_modules/cz-customizable/standalone.js",
     "test": "jest",
     "test:watch": "yarn jest --watch",
-    "commit": "git-cz",
     "docs": "typedoc --entryPointStrategy  expand --tsconfig ./tsconfig.json --excludeInternal --excludeProtected",
     "docs-hierarchy": "typedoc --entryPointStrategy  expand --tsconfig ./tsconfig.json --plugin ./node_modules/typedoc-theme-hierarchy/dist/index.js --theme hierarchy",
     "docs-github": "typedoc --theme github-wiki --entryPointStrategy  expand --tsconfig ./tsconfig.json  "
@@ -57,7 +57,7 @@
     "commitizen": "^4.2.4",
     "commitlint-config-gitmoji": "^2.2.5",
     "cz-conventional-changelog": "3.3.0",
-    "cz-gitmoji": "^0.0.7",
+    "cz-customizable": "^6.9.0",
     "eslint": "^8.8.0",
     "eslint-config-next": "^12.0.10",
     "eslint-config-prettier": "^8.3.0",
@@ -82,20 +82,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    },
-    "cz-gitmoji": {
-      "types": [
-        {
-          "name": "bad \t💩 bad code",
-          "value": ":hankey:"
-        },
-        {
-          "name": "test \t ✅ test code",
-          "value": ":white_check_mark:"
-        }
-      ]
+      "path": "cz-customizable"
     }
   }
-
 }
