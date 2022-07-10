@@ -1,4 +1,4 @@
-import { ButtonWrapper, ButtonVariant } from '../styles'
+import { ButtonWrapper, ButtonVariant } from './styles'
 
 interface ButtonProps {
   children: React.ReactNode
