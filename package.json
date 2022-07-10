@@ -1,6 +1,6 @@
 {
-  "name": "sky-vite-template",
-  "private": false,
+  "name": "skypomo",
+  "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -29,9 +29,16 @@
     ]
   },
   "dependencies": {
+    "@hookform/resolvers": "^2.9.5",
+    "date-fns": "^2.28.0",
+    "immer": "^9.0.15",
+    "phosphor-react": "^1.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "styled-components": "^5.3.5"
+    "react-hook-form": "^7.33.1",
+    "react-router-dom": "^6.3.0",
+    "styled-components": "^5.3.5",
+    "zod": "^3.17.3"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
