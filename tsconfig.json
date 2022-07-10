@@ -12,27 +12,14 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": true,
-    "jsx": "preserve",
-    "jsxFactory": "h",
-    "jsxFragmentFactory": "Fragment",
+    "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@pages/*": ["src/pages/*"],
-      "@utils/*": ["src/utils/*"],
-      "@styles/*": ["src/styles/*"],
-      "@interfaces/*": ["src/interfaces/*"]
+      "test-utils": ["./src/utils/test-utils"]
     }
   },
   "include": ["src"],
-  "exclude": ["node_modules"],
-  "typedocOptions": {
-    "entryPoints": ["src/"],
-    "exclude": ["**/src/pages/**/*.ts", "**/src/pages/**/*.tsx"],
-    "out": "docs"
-  },
   "references": [{ "path": "./tsconfig.node.json" }]
 }

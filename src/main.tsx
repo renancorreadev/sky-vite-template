@@ -1,4 +1,10 @@
-import { render } from 'preact'
-import { App } from './app'
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { App } from './App'
 
-render(<App />, document.getElementById('app') as HTMLElement)
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)

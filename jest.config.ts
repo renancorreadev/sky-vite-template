@@ -9,6 +9,13 @@ const config: Config.InitialOptions = {
   testEnvironment: 'jsdom',
   transformIgnorePatterns: ['/node_modules/'],
   modulePathIgnorePatterns: ['/node_modules/'],
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest'
+  },
+  moduleNameMapper: {
+    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',
+    '\\.(css|less|sass|scss)$': 'identity-obj-proxy'
+  },
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts']
 }
 export default config

@@ -1,7 +1,12 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import { ThemeProvider } from 'styled-components'
+import { defaultTheme } from './styles/themes/default'
 export function App() {
   return (
-    <>
-      <h1>Hello World!</h1>
-    </>
+    <ThemeProvider theme={defaultTheme}>
+      <div className="App">
+        <h2>Test</h2>
+      </div>
+    </ThemeProvider>
   )
 }
